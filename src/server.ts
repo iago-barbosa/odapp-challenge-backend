@@ -15,7 +15,7 @@ const iniciar_servidor = async () => {
         app.use(express.json());
         app.use(routes);
 
-        app.listen(process.env.PORT, () => console.warn("Server is running on port 3000"));
+        app.listen(process.env.PORT, () => console.warn(`Server is running on port ${process.env.PORT}`));
     } catch(error) {
         console.error("Erro ao inicar servidor: ", error);
     }
