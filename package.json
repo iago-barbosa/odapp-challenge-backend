@@ -1,0 +1,24 @@
+{
+  "name": "odapp-challenge-backend",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "repository": "https://github.com/iago-barbosa/odapp-challenge-backend.git",
+  "author": "Iago Barbosa <47748016+iago-barbosa@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/server.ts",
+    "prod": "ts-node-dev --respawn --transpile-only ./src/server.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.3"
+  }
+}
