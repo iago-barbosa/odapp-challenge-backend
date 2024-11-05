@@ -12,7 +12,7 @@ routes.get("/", (req: Request, res: Response) => {
 routes.get("/lista-pacientes", async (req: Request, res: any) => {
     try {
         const pacientes =  await Paciente.find();
-        return res.json(pacientes);
+        return res.status(200).json(pacientes);
     } catch(error) {
         return res.status(500).json({ message: "Erro ao carregar os pacientes", error});
     }

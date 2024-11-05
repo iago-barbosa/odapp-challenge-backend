@@ -1,5 +1,6 @@
 import express from "express";
 import routes from "./routes/Routes";
+import cors from 'cors';
 import dotenv from 'dotenv';
 import { conectar_database } from "./config/database";
 
@@ -13,6 +14,7 @@ const iniciar_servidor = async () => {
     try {
         await conectar_database();
         app.use(express.json());
+        app.use(cors());
         app.use(routes);
 
         app.listen(process.env.PORT, () => console.warn(`Server is running on port ${process.env.PORT}`));
