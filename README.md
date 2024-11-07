@@ -14,6 +14,17 @@ Esse desafio também está disponivel diretamente em um ambiente de produção n
 
 - [Node.js](https://nodejs.org/) instalado
 
+### Técnologias e Bibliotecas Utilizadas
+
+- Node
+- Typescript
+- MongoDB
+- Cors
+- DotEnv
+- Express
+- Mongoose
+- ts-node-dev
+
 ## Passo a Passo para Executar a Aplicação
 
 1. **Clone o repositório ou copie os arquivos para um diretório local.**
